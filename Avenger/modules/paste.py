@@ -8,7 +8,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
 from Avenger.utils.pastebin import paste
-from from FallenRobot import pbot as app.utils.errors import capture_err
+from Avenger.utils.errors import capture_err
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
