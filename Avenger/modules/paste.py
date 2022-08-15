@@ -7,6 +7,7 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
+from Avenger import aiohttpsession as session
 from Avenger import pbot
 from Avenger.utils.pastebin import paste
 from Avenger.utils.errors import capture_err
