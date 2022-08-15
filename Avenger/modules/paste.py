@@ -9,7 +9,6 @@ from pyrogram.types import InlineKeyboardButton
 
 from Avenger.utils.pastebin import paste
 from from FallenRobot import pbot as app.utils.errors import capture_err
-from Avenger import pbot as app
 
 pattern = re.compile(
     r"^text/|json$|yaml$|xml$|toml$|x-sh$|x-shellscript$"
@@ -31,7 +30,7 @@ async def isPreviewUp(preview: str) -> bool:
     return False
 
 
-@app.on_message(filters.command("paste") & ~filters.edited)
+@pbot.on_message(filters.command("paste"))
 @capture_err
 async def paste_func(_, message):
     if not message.reply_to_message:
