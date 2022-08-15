@@ -120,7 +120,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━\n☘️ ʟᴏɢᴏ ᴄʀᴇᴀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ☘️\n◈──────────◈\n🔥 ᴄʀᴇᴀᴛᴇᴅ ʙʏ : [Sᴄᴀʀʟᴇᴛ](https://t.me/mrsScarlett_bot)\n━━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━━",
+            caption="━━━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━━━\n☘️ ʟᴏɢᴏ ᴄʀᴇᴀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ☘️\n🔥 ᴄʀᴇᴀᴛᴇᴅ ʙʏ : [Sᴄᴀʀʟᴇᴛ](https://t.me/mrsScarlett_bot)\n━━━━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━━━━",
             force_document=False,
         )
         os.remove(flnme)
@@ -203,7 +203,7 @@ async def logo_(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="━━━━━━━  Sᴄᴀʀʟᴇᴛ  ━━━━━━━\n☘️ ʟᴏɢᴏ ᴄʀᴇᴀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ☘️\n◈──────────────◈\n🔥 ᴄʀᴇᴀᴛᴇᴅ ʙʏ : [Sᴄᴀʀʟᴇᴛ](https://t.me/mrsScarlett_bot)\n\n━━━━━━━  Sᴄᴀʀʟᴇᴛ  ━━━━━━━", buttons=BUTTON,
+            caption="━━━━━━━━━  Sᴄᴀʀʟᴇᴛ  ━━━━━━━━━\n☘️ ʟᴏɢᴏ ᴄʀᴇᴀᴛᴇᴅ ꜱᴜᴄᴄᴇꜱꜱꜰᴜʟʟʏ ☘️\n🔥 ᴄʀᴇᴀᴛᴇᴅ ʙʏ : [Sᴄᴀʀʟᴇᴛ](https://t.me/mrsScarlett_bot)\n\n━━━━━━━━━  Sᴄᴀʀʟᴇᴛ  ━━━━━━━━━",
             force_document=False,
         )
         os.remove(flnme)
@@ -220,7 +220,7 @@ async def repolypj(_, message):
     id = message.from_user.photo.big_file_id
     m = await message.reply_text("📸 ᴄʀᴇᴀᴛɪɴɢ..")    
     photo = await pbot.download_media(id)
-    caption = "━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n◈────────────◈\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Sᴄᴀʀʟᴇᴛ](https://t.me/mrsScarlett_bot)\n\n━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━"
+    caption = "━━━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━━━\n☘️ ᴛʜɪꜱ ɪꜱ ʏᴏᴜʀ ᴘʀᴏꜰɪʟᴇ ᴘɪᴄᴛᴜʀᴇ ☘️\n🔥 ᴜᴘʟᴏᴀᴅᴇᴅ ʙʏ : [Sᴄᴀʀʟᴇᴛ](https://t.me/mrsScarlett_bot)\n\n━━━━━━━━ Sᴄᴀʀʟᴇᴛ ━━━━━━━━"
     pesan = await m.edit("📤 ᴜᴘʟᴏᴀᴅɪɴɢ ...")
     await pbot.send_chat_action(message.chat.id, "upload_photo")    
     await message.reply_photo(photo, caption)
